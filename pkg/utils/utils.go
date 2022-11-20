@@ -8,6 +8,7 @@ import (
 	"golang.org/x/crypto/bcrypt"
 )
 
+// Pagination return the limit, offset and error from the query in url
 func Pagination(c *gin.Context) (int, int, error) {
 	pageStr := c.Query("page")
 	page := 0
@@ -37,17 +38,19 @@ func Pagination(c *gin.Context) (int, int, error) {
 	return page, limit, nil
 }
 
+// HashPassword return the hashed string of the password.
 func HashPassword(password string) (string, error) {
 	byte, err := bcrypt.GenerateFromPassword([]byte(password), 14)
 	return string(byte), err
 }
 
+// CheckPassword verify the password match.
 func CheckPassword(password, hash string) bool {
 	err := bcrypt.CompareHashAndPassword([]byte(hash), []byte(password))
 	return err == nil
 }
 
-// Converts a struct to a map while maintaining the json alias as keys
+// Converts a struct to a map while maintaining the json alias as keys.
 func StructToMap(obj interface{}) (newMap map[string]interface{}, err error) {
 	data, err := json.Marshal(obj) // Convert to a json string
 

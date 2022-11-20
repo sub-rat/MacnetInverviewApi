@@ -16,6 +16,7 @@ type server struct {
 	DB     *gorm.DB
 }
 
+// GetServer Returns the server instance with postgres connection and Gin initialization
 func GetServer() *server {
 	return &server{
 		Engine: gin.Default(),
@@ -23,13 +24,14 @@ func GetServer() *server {
 	}
 }
 
+// Run initialize the routes and start the server engine
 func (server *server) Run() {
 	server.initRoutes()
 	log.Fatal(server.Engine.Run())
 }
 
+// initRoutes initializes the Enginer and Routes
 func (server *server) initRoutes() {
-	// routes or Endpoints
 	eng := server.Engine
 	user.RegisterRoutes(eng, user.NewService(user.NewRepository(*server.DB)))
 	post.RegisterRoutes(eng, post.NewService(post.NewRepository(*server.DB), timeline.NewRepository(*server.DB)))

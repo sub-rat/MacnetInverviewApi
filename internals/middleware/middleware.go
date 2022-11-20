@@ -9,6 +9,7 @@ import (
 	"github.com/sub-rat/machnet_api_assingment/pkg/utils"
 )
 
+// CheckToken checks the token validity from the requested url.
 func CheckToken(context *gin.Context) {
 	token, err := utils.VerifyJwtToken(context)
 	if err != nil || !token.Valid {

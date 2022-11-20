@@ -15,6 +15,8 @@ type authCustomClaims struct {
 	jwt.StandardClaims
 }
 
+// GenerateJwtToken generates the token which has validity of 48 hrs
+// and SIGNING_KEY provided from environment
 func GenerateJwtToken(id uint) string {
 	claims := &authCustomClaims{
 		id,
@@ -29,6 +31,7 @@ func GenerateJwtToken(id uint) string {
 	return tokenString
 }
 
+// VerifyJwtToken Parse and verify the Token and return the Token and error
 func VerifyJwtToken(r *gin.Context) (*jwt.Token, error) {
 	tokenString := ExtractToken(r)
 	token, err := jwt.Parse(tokenString, func(token *jwt.Token) (interface{}, error) {
@@ -43,6 +46,7 @@ func VerifyJwtToken(r *gin.Context) (*jwt.Token, error) {
 	return token, nil
 }
 
+// ExtractToken returns the Token string  from Authorization header
 func ExtractToken(r *gin.Context) string {
 	bearToken := r.GetHeader("Authorization")
 	strArr := strings.Split(bearToken, " ")
