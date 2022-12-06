@@ -6,7 +6,9 @@ services:
       - "8080:8080"
     restart: always
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy
+
     environment:
       - PORT=8080
       - HOST=0.0.0.0
@@ -28,7 +30,7 @@ services:
           "-d",
           "postgres",
           "-U",
-          "root"
+          "postgres"
         ]
       timeout: 45s
       interval: 10s
