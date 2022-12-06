@@ -5,9 +5,9 @@ import (
 	"strconv"
 
 	"github.com/gin-gonic/gin"
-	"github.com/sub-rat/machnet_api_assingment/internals/middleware"
-	"github.com/sub-rat/machnet_api_assingment/internals/models"
-	"github.com/sub-rat/machnet_api_assingment/pkg/utils"
+	"github.com/sub-rat/social_network_api/internals/middleware"
+	"github.com/sub-rat/social_network_api/internals/models"
+	"github.com/sub-rat/social_network_api/pkg/utils"
 )
 
 type resource struct {

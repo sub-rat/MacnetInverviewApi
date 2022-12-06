@@ -1,4 +1,4 @@
-module github.com/sub-rat/machnet_api_assingment
+module github.com/sub-rat/social_network_api
 
 go 1.19
 

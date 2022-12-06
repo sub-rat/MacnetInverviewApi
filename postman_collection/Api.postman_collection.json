@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "eb97cfaa-c843-4bcc-8ad2-a6814d285ad0",
-		"name": "Macnet Interview Api",
+		"name": "Social Network App Api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "82359"
 	},
@@ -19,7 +19,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 1,\n    \"first_name\":\"Subrat\",\n    \"last_name\":\"Gyawali\",\n    \"email\":\"subrat.gyawali+1@gmail.com\",\n    \"password\":\"password\"\n\n}"
+							"raw": "{\n    \"id\": 1,\n    \"first_name\":\"xxxx\",\n    \"last_name\":\"xxxx\",\n    \"email\":\"xxx@xxx.com\",\n    \"password\":\"password\"\n\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/dashboard?page=1&size=3",
@@ -55,7 +55,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 1,\n    \"first_name\":\"Subrat\",\n    \"last_name\":\"Gyawali\",\n    \"email\":\"subrat.gyawali+1@gmail.com\",\n    \"password\":\"password\"\n\n}"
+							"raw": "{\n    \"id\": 1,\n    \"first_name\":\"xxxx\",\n    \"last_name\":\"xxxx\",\n    \"email\":\"xxxx.xxxx+1@gmail.com\",\n    \"password\":\"password\"\n\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/my-timeline",
@@ -138,7 +138,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"id\": 1,\n    \"first_name\":\"Subrat\",\n    \"last_name\":\"Gyawali\",\n    \"email\":\"subrat.gyawali+1@gmail.com\",\n    \"password\":\"password\"\n\n}"
+											"raw": "{\n    \"id\": 1,\n    \"first_name\":\"xxxx\",\n    \"last_name\":\"xxxx\",\n    \"email\":\"xxxx.xxxx+1@gmail.com\",\n    \"password\":\"password\"\n\n}"
 										},
 										"url": {
 											"raw": "http://localhost:8080/friends/:id/accept",
@@ -172,7 +172,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n    \"id\": 1,\n    \"first_name\":\"Subrat\",\n    \"last_name\":\"Gyawali\",\n    \"email\":\"subrat.gyawali+1@gmail.com\",\n    \"password\":\"password\"\n\n}"
+											"raw": "{\n    \"id\": 1,\n    \"first_name\":\"xxxx\",\n    \"last_name\":\"xxxx\",\n    \"email\":\"xxxx.xxxx+1@gmail.com\",\n    \"password\":\"password\"\n\n}"
 										},
 										"url": {
 											"raw": "http://localhost:8080/friends/:id/reject",
@@ -205,7 +205,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"id\": 1,\n    \"first_name\":\"Subrat\",\n    \"last_name\":\"Gyawali\",\n    \"email\":\"subrat.gyawali+1@gmail.com\",\n    \"password\":\"password\"\n\n}"
+									"raw": "{\n    \"id\": 1,\n    \"first_name\":\"xxxx\",\n    \"last_name\":\"xxxx\",\n    \"email\":\"xxxx.xxxx+1@gmail.com\",\n    \"password\":\"password\"\n\n}"
 								},
 								"url": {
 									"raw": "http://localhost:8080/friends/:id",
@@ -240,7 +240,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 1,\n    \"first_name\":\"Subrat\",\n    \"last_name\":\"Gyawali\",\n    \"email\":\"subrat.gyawali+1@gmail.com\",\n    \"password\":\"password\"\n\n}"
+							"raw": "{\n    \"id\": 1,\n    \"first_name\":\"xxxx\",\n    \"last_name\":\"xxxx\",\n    \"email\":\"xxxx.xxxx+1@gmail.com\",\n    \"password\":\"password\"\n\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8080/friends",
@@ -586,7 +586,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\":\"subrat.gyawali+2@gmail.com\",\n    \"password\":\"password\"\n\n}"
+					"raw": "{\n    \"email\":\"xxxx.xxxx+2@gmail.com\",\n    \"password\":\"password\"\n\n}"
 				},
 				"url": {
 					"raw": "http://localhost:8080/login",
@@ -609,7 +609,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"first_name\":\"Subrat\",\n    \"last_name\":\"Gyawali\",\n    \"email\":\"subrat.gyawali+6@gmail.com\",\n    \"password\":\"password\"\n\n}"
+					"raw": "{\n    \"first_name\":\"xxxx\",\n    \"last_name\":\"xxxx\",\n    \"email\":\"xxxx.xxxx+6@gmail.com\",\n    \"password\":\"password\"\n\n}"
 				},
 				"url": {
 					"raw": "http://localhost:8080/register",

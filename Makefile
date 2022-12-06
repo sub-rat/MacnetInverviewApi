@@ -1,8 +1,8 @@
 run: build
-	./bin/macnet_api_assingment
+	./bin/api
 
 build:
-	go build -o ./bin/macnet_api_assingment cmd/api/main.go
+	go build -o ./bin/api cmd/api/main.go
 
 clean:
 	go clean

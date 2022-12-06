@@ -4,10 +4,10 @@ import (
 	"log"
 
 	"github.com/gin-gonic/gin"
-	"github.com/sub-rat/machnet_api_assingment/internals/features/post"
-	"github.com/sub-rat/machnet_api_assingment/internals/features/timeline"
-	"github.com/sub-rat/machnet_api_assingment/internals/features/user"
-	"github.com/sub-rat/machnet_api_assingment/pkg/db/postgres"
+	"github.com/sub-rat/social_network_api/internals/features/post"
+	"github.com/sub-rat/social_network_api/internals/features/timeline"
+	"github.com/sub-rat/social_network_api/internals/features/user"
+	"github.com/sub-rat/social_network_api/pkg/db/postgres"
 	"gorm.io/gorm"
 )
 

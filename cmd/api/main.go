@@ -6,7 +6,7 @@ import (
 	"os"
 
 	"github.com/joho/godotenv"
-	"github.com/sub-rat/machnet_api_assingment/internals/server"
+	"github.com/sub-rat/social_network_api/internals/server"
 )
 
 func main() {

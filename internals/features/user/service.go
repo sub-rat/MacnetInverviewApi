@@ -3,8 +3,8 @@ package user
 import (
 	"errors"
 
-	"github.com/sub-rat/machnet_api_assingment/internals/models"
-	"github.com/sub-rat/machnet_api_assingment/pkg/utils"
+	"github.com/sub-rat/social_network_api/internals/models"
+	"github.com/sub-rat/social_network_api/pkg/utils"
 )
 
 type ServiceInterface interface {

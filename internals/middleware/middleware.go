@@ -6,7 +6,7 @@ import (
 
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
-	"github.com/sub-rat/machnet_api_assingment/pkg/utils"
+	"github.com/sub-rat/social_network_api/pkg/utils"
 )
 
 // CheckToken checks the token validity from the requested url.

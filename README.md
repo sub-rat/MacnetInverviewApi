@@ -1,4 +1,4 @@
-# Macnet Social Network Api
+# Social Network Api
 
 ## Run By Docker
 ```

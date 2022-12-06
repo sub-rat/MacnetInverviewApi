@@ -3,8 +3,8 @@ package timeline
 import (
 	"errors"
 
-	"github.com/sub-rat/machnet_api_assingment/internals/features/user"
-	"github.com/sub-rat/machnet_api_assingment/internals/models"
+	"github.com/sub-rat/social_network_api/internals/features/user"
+	"github.com/sub-rat/social_network_api/internals/models"
 )
 
 type ServiceInterface interface {
