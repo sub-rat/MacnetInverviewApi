@@ -1,6 +1,6 @@
 # Social Network Api
 
-## RUN BY Docker
+## RUN BY DOCKER
 ```
 docker-compose up -d
 ```
